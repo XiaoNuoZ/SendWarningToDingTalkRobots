@@ -8,6 +8,7 @@ import (
 	"time"
 )
 
+// 打包代码：  CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o app .
 func main() {
 	text := fmt.Sprintf("告警消息 ：time %v ", time.Now())
 
